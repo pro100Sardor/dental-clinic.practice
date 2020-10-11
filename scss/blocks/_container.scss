@@ -1,7 +1,7 @@
 .big-container {
-  // @include container ();
+  @include container ($cont-max-width: 1440px, $cont-sides-padding: 20px);
 }
 
 .small-container {
-  // @include container ();
+  @include container ($cont-max-width: 1180px, $cont-sides-padding: 20px);
 }
