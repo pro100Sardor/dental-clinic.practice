@@ -55,6 +55,21 @@ margin: {
 
 // nailing to correct the top and bottom margins of the headings ended
 
+//container mixin started
+
+@mixin container ($cont-max-width, $cont-sides-padding) {
+  max-width: $cont-max-width;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  padding: {
+    left: $cont-sides-padding;
+    right: $cont-sides-padding;
+  }
+}
+
+//container mixin ended
 
 // media to adapt the background image to retinal screens started
 

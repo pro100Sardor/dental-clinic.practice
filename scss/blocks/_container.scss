@@ -1,11 +1,7 @@
-.container {
-  // max-width: ;
-  margin: {
-    left: auto;
-    right: auto;
-  }
-  // padding: {
-  //   left: ;
-  //   right: ;
-  // }
+.big-container {
+  // @include container ();
+}
+
+.small-container {
+  // @include container ();
 }
