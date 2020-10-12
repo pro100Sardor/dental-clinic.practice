@@ -175,9 +175,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     width: 20px;
-    height: 20px;
+    height: 22px;
     color: #fff;
     font-weight: 700;
     margin-left: auto;
@@ -187,6 +187,11 @@
   .site-nav__x-toggler {
     font-size: 35px;
     line-height: 23px;
+    transition: order 0.2s ease;
+  }
+
+  .site-nav--open .site-nav__x-toggler {
+    order: 1;
   }
 
   .site-nav__burger-toggler {
@@ -200,7 +205,7 @@
     left: 0;
     z-index: 1;
     width: 100%;
-    min-height: 100vh;
+    height: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,6 +214,11 @@
     margin-left: 0;
     overflow-y: auto;
     background-color: #0055b8;
+    transition: min-height 0.2s ease;
+  }
+
+  .site-nav--open .site-nav__menyu-wrapper {
+    min-height: 100vh;
   }
 
   .site-nav__features-list {
