@@ -1,4 +1,9 @@
 .site-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
   background-color: #fff;
 }
 
@@ -6,6 +11,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: {
+    top: 12px;
+    bottom: 16px;
+  }
 }
 
 .site-header__contact-us-wrapper {
@@ -37,10 +46,10 @@
     background-position: center center;
     transition: opacity 0.2s ease;
     // element flex child bo'lgani uchun display berilmadi.
-  }
 
-  @include bg-retina {
-    background-image: url("../img/phone@2x.png");
+    @include bg-retina {
+      background-image: url("../img/phone@2x.png");
+    }
   }
 }
 
@@ -56,8 +65,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
 }
 
 .site-header__contact-us-number {
@@ -89,10 +96,16 @@
 }
 
 .site-header__working-period {
+  flex-shrink: 0;
+  max-width: 196px;
+  min-width: 196px;
   display: flex;
   align-items: center;
+  @include p-m-control;
   font-size: 14px;
   line-height: 16px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 
   &::before {
     content: "";
@@ -106,10 +119,10 @@
     background-position: center center;
     transition: opacity 0.2s ease;
     // element flex child bo'lgani uchun display berilmadi.
-  }
 
-  @include bg-retina {
-    background-image: url("../img/clock@2x.png");
+    @include bg-retina {
+      background-image: url("../img/clock@2x.png");
+    }
   }
 }
 
@@ -123,9 +136,37 @@
   margin-bottom: 3px;
   font-weight: 500;
   color: #00B007;
+  text-overflow: ellipsis;
 }
 
 .site-header__working-duration {
   font-weight: 300;
   color: #272727;
+  text-overflow: ellipsis;
+}
+
+@include breakpoint-down (1024px) {
+  .site-header__clinic-info-section {
+    display: none;
+  }
+
+  .site-header__container {
+    padding: {
+      right: 0;
+      left: 0;
+    }
+  }
+}
+
+@include breakpoint-down (375px) {
+  .site-header__clinic-info-section {
+    display: none;
+  }
+
+  .site-header__container {
+    padding: {
+      right: 0;
+      left: 0;
+    }
+  }
 }

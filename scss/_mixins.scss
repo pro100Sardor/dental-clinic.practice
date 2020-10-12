@@ -46,7 +46,7 @@
 
 // nailing to correct the top and bottom margins of the headings started
 
-@mixin p-m-control ($top, $bottom) {
+@mixin p-m-control ($top: 0, $bottom: 0) {
 margin: {
   top: $top;
   bottom: $bottom;
