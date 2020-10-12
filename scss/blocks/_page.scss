@@ -1,5 +1,9 @@
 .page__body {
-  margin-top: 120px;
+  margin-top: 140px;
+}
+
+.page__body--nojs {
+  margin-top: 0;
 }
 
 .page__main {
@@ -8,12 +12,20 @@
 
 @include breakpoint-down (1024px) {
   .page__body {
-    margin-top: 68px;
+    margin-top: 70px;
+  }
+
+  .page__body--nojs {
+    margin-top: 0;
   }
 }
 
 @include breakpoint-down (375px) {
   .page__body {
-    margin-top: 68px;
+    margin-top: 70px;
+  }
+
+  .page__body--nojs {
+    margin-top: 0;
   }
 }

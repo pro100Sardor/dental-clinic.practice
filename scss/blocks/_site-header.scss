@@ -7,13 +7,19 @@
   background-color: #fff;
 }
 
+.page__body--nojs .site-header {
+  position: static;
+  width: 100%;
+  background-color: #fff;
+}
+
 .site-header__clinic-info-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: {
     top: 12px;
-    bottom: 16px;
+    // bottom: 16px;
   }
 }
 
@@ -145,6 +151,10 @@
   text-overflow: ellipsis;
 }
 
+.site-header__site-nav {
+  transform: translateY(45%);
+}
+
 @include breakpoint-down (1024px) {
   .site-header__clinic-info-section {
     display: none;
@@ -155,6 +165,10 @@
       right: 0;
       left: 0;
     }
+  }
+
+  .site-header__site-nav {
+    transform: translateY(0);
   }
 }
 
@@ -168,5 +182,9 @@
       right: 0;
       left: 0;
     }
+  }
+
+  .site-header__site-nav {
+    transform: translateY(0);
   }
 }
