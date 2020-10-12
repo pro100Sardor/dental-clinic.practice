@@ -22,11 +22,11 @@
 
 // list by default padding and margin loss styles started
 
-@mixin reset-list {
+@mixin reset-list ($list-m-top: 0, $list-m-bottom: 0) {
   list-style-type: none;
   margin: {
-    top: 0;
-    bottom: 0;
+    top: $list-m-top;
+    bottom: $list-m-bottom;
   }
   padding-left: 0;
 }
