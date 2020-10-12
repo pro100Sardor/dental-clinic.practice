@@ -1,0 +1,131 @@
+.site-header {
+  background-color: #fff;
+}
+
+.site-header__clinic-info-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header__contact-us-wrapper {
+  max-width: 196px;
+  min-width: 196px;
+}
+
+.site-header__contact-us-link {
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #272727;
+  transition: opacity 0.2s ease;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 29px;
+    height: 29px;
+    margin-right: 7px;
+    background-image: url("../img/phone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: opacity 0.2s ease;
+    // element flex child bo'lgani uchun display berilmadi.
+  }
+
+  @include bg-retina {
+    background-image: url("../img/phone@2x.png");
+  }
+}
+
+.site-header__contact-us-link:hover {
+  opacity: 0.8;
+}
+
+.site-header__contact-us-link:active {
+  opacity: 0.6;
+}
+
+.site-header__contact-us-number-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.site-header__contact-us-number {
+  font-weight: 300;
+  white-space: nowrap;
+  margin-top: 3px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.site-header__logo-link {
+  flex-shrink: 0;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.site-header__logo-img {
+  display: block;
+  width: 103px;
+  height: 56px;
+  object-fit: cover;
+}
+
+.site-header__working-period {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 29px;
+    height: 29px;
+    margin-right: 7px;
+    background-image: url("../img/clock.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: opacity 0.2s ease;
+    // element flex child bo'lgani uchun display berilmadi.
+  }
+
+  @include bg-retina {
+    background-image: url("../img/clock@2x.png");
+  }
+}
+
+.site-header__working-moments {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.site-header__working-time {
+  margin-bottom: 3px;
+  font-weight: 500;
+  color: #00B007;
+}
+
+.site-header__working-duration {
+  font-weight: 300;
+  color: #272727;
+}

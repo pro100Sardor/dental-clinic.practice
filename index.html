@@ -11,7 +11,45 @@
 <body class="page__body">
   <!-- HEADER part of page started -->
 
-  <header></header>
+  <header class="site-header">
+    <div class="container container--small site-header__container">
+      <section class="site-header__clinic-info-section">
+        <div class="site-header__contact-us-wrapper">
+          <a class="site-header__contact-us-link" href="tel: +7-342-216-22-27">
+            <span class="site-header__contact-us-number-wrapper">Contact us
+              <span class="site-header__contact-us-number">+7(342)216-22-27</span>
+            </span></a>
+        </div>
+        <a class="site-header__logo-link" href="./index.html">
+          <img class="site-header__logo-img" src="./img/logo.png" srcset="./img/logo.png 1x, ./img/logo@2x.png 2x" alt="logo of dental clinic" width="103" height="56">
+        </a>
+        <p class="site-header__working-period">
+          <span class="site-header__working-moments">
+            <span class="site-header__working-time">Open now</span>
+            <span class="site-header__working-duration">Today we work until 19.00</span>
+          </span>
+        </p>
+      </section>
+      <section class="site-header__site-info-section">
+        <a href="services-section">
+          <img src="./img/logo-small.png" srcset="./img/logo-small.png 1x, ./img/logo-small@2x.png 2x" alt="logo of dental clinic" width="140" height="21">
+        </a>
+        <ul>
+          <li>
+            <a href="./services.html">Services</a>
+          </li>
+        </ul>
+        <ul aria-hidden="true">
+          <li aria-hidden="true">
+            <a href="https://vk.com/" target="_blank">
+              <img src="./img/vk.png" srcset="./img/vk.png 1x, ./img/vk@2x.png 2x" alt="go to the dental clinic vk page" width="28" height="28" aria-hidden="true">
+            </a>
+          </li>
+        </ul>
+        <!-- imkoniyati cheklanganlar ijtimoiy tarmoqlardan foydalanmasa kerak degan tahmin bilan aria-hidden ni true qildim -->
+      </section>
+    </div>
+  </header>
 
   <!-- HEADER part of page ended -->
 
