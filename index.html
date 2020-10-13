@@ -132,58 +132,54 @@
       <h2 class="visually-hidden">what do we do? Text summary about our services</h2>
       <div class="container container--small services-general__container">
         <div class="services-general__service-info-wrapper services-general__service-info-wrapper--first">
-          <h4 class="services-general__service-name">Treatment</h4>
-          <p class="services-general__service-description">All types of dental treatment are carried out using the most modern technologies.</p>
-        </div>
-        <div class="services-general__service-info-wrapper services-general__service-info-wrapper--second">
-          <h4 class="services-general__service-name">Prosthetics</h4>
-          <p class="services-general__service-description">We will help you find the most convenient and aesthetically attractive version of the prosthesis.</p>
-        </div>
-        <form class="services-general__appointment-form appointment-form" action="https://echo.htmlacademy.ru" method="POST">
-          <h3 class="appointment-form__title">Appointment</h3>
-          <label for="userName" class="visually-hidden">please enter your name so we can contact you</label>
-          <input
-            class="appointment-form__user-field"
-            type="text"
-            name="user_name"
-            id="userName"
-            placeholder="Name"
-            pattern="[A-Za-z]{3}"
-            maxlength="50"
-            aria-label="please enter only the letter in this field"
-            required>
-
-          <label for="userPhone" class="visually-hidden">please enter your phone number so we can contact you</label>
-          <input
-            class="appointment-form__user-field"
-            type="tel"
-            name="user_phone"
-            id="userPhone"
-            placeholder="Phone"
-            pattern="[0-9]{7}"
-            maxlength="17"
-            aria-label="just enter a number in this field, enter at least 7 digits"
-            required>
-            <button class="appointment-form__form-submit" type="submit">Appointment</button>
-          <div class="appointment-form__user-agreement-wrapper">
-            <span
-              class="appointment-form__user-agreement-text"
-              aria-label="do you allow us to store your data?
-                          Tab the checkbox if yes, do not select the checkbox if not">
-              I give my consent to the storage and processing of personal data
-            </span>
-            <label class="appointment-form__user-agreement-label">
-              <input
-              class="appointment-form__user-agreement visually-hidden"
-              type="checkbox"
-              name="agreement"
-              id="agreement"
-              required
-              checked>
-              <span class="appointment-form__user-agreement-appearance"></span>
-            </label>
+            <h4 class="services-general__service-name">Treatment</h4>
+            <p class="services-general__service-description">All types of dental treatment are carried out using the most modern technologies.</p>
           </div>
-        </form>
+          <div class="services-general__service-info-wrapper services-general__service-info-wrapper--second">
+            <h4 class="services-general__service-name">Prosthetics</h4>
+            <p class="services-general__service-description">We will help you find the most convenient and aesthetically attractive version of the prosthesis.</p>
+          </div>
+          <form class="services-general__appointment-form appointment-form" action="https://echo.htmlacademy.ru" method="POST">
+            <h3 class="appointment-form__title">Appointment</h3>
+            <label for="userName" class="visually-hidden">please enter your name so we can contact you</label>
+            <input
+              class="appointment-form__user-field"
+              type="text"
+              name="user_name"
+              id="userName"
+              placeholder="Name"
+              aria-label="please enter only the letter in this field"
+              required>
+
+            <label for="userPhone" class="visually-hidden">please enter your phone number so we can contact you</label>
+            <input
+              class="appointment-form__user-field"
+              type="tel"
+              name="user_phone"
+              id="userPhone"
+              placeholder="Phone"
+              aria-label="just enter a number in this field, enter at least 7 digits"
+              required>
+              <button class="appointment-form__form-submit" type="submit">Appointment</button>
+            <div class="appointment-form__user-agreement-wrapper">
+              <span
+                class="appointment-form__user-agreement-text"
+                aria-label="do you allow us to store your data?
+                            Tab the checkbox if yes, do not select the checkbox if not">
+                I give my consent to the storage and processing of personal data
+              </span>
+              <label class="appointment-form__user-agreement-label">
+                <input
+                class="appointment-form__user-agreement visually-hidden"
+                type="checkbox"
+                name="agreement"
+                id="agreement"
+                required
+                checked>
+                <span class="appointment-form__user-agreement-appearance"></span>
+              </label>
+            </div>
+          </form>
       </div>
     </section>
   </main>

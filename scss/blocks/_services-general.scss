@@ -81,14 +81,7 @@
   z-index: 1;
 }
 
-@include breakpoint-down (1024px) {
-
-  .services-general__container {
-    padding: {
-      left: 0;
-      right: 0;
-    }
-  }
+@include breakpoint-down (1185px) {
 
   .services-general__service-info-wrapper {
     max-width: 269px;
@@ -100,6 +93,68 @@
 
   .services-general__service-info-wrapper--first {
     padding-bottom: 31px;
+  }
+}
+
+@include breakpoint-down (1120px) {
+  .services-general__container {
+    padding: {
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+// @include breakpoint-down (1024px) {
+
+//   .services-general__container {
+//     padding: {
+//       left: 0;
+//       right: 0;
+//     }
+//   }
+
+//   .services-general__service-info-wrapper {
+//     max-width: 269px;
+//     padding: {
+//       left: 32px;
+//       right: 33px;
+//     }
+//   }
+
+//   .services-general__service-info-wrapper--first {
+//     padding-bottom: 31px;
+//   }
+// }
+
+@include breakpoint-down (1025px) {
+  .services-general__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-general__service-info-wrapper--second {
+    order: 0;
+  }
+
+  .services-general__service-info-wrapper {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .services-general__appointment-form.services-general__appointment-form {
+    order: 0;
+    transform: translateY(0);
+    z-index: 1;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@include breakpoint-down (485px) {
+  .services-general__service-info-wrapper {
+    display: none;
   }
 }
 

@@ -119,6 +119,37 @@
   }
 }
 
+@include breakpoint-down (1120px) {
+  .appointment-form {
+    max-width: 485px;
+    min-width: 485px;
+    padding: {
+      left: 29px;
+      right: 31px;
+    }
+  }
+
+  .appointment-form__user-field {
+    padding: {
+      left: 13px;
+      right: 13px;
+    }
+  }
+
+  .appointment-form__form-submit {
+    width: 206px;
+  }
+  .appointment-form__user-agreement-text {
+    width: 267px;
+    margin-right: 25px;
+  }
+
+  .appointment-form__user-agreement-appearance {
+    width: 32px;
+    background-size: 21px 16px;
+  }
+}
+
 @include breakpoint-down (1024px) {
   .appointment-form {
     max-width: 485px;
@@ -150,10 +181,39 @@
   }
 }
 
-@include breakpoint-down (375px) {
+@include breakpoint-down (485px) {
   .appointment-form {
     max-width: 375px;
     min-width: 375px;
+    padding: {
+      top: 25px;
+      right: 23px;
+      bottom: 25px;
+      left: 24px;
+    }
+    color: #fff;
+  }
+
+  .appointment-form__title {
+    @include h-m-control (0, 23px);
+  }
+
+  .appointment-form__user-field {
+    padding: {
+      left: 20px;
+      right: 20px;
+    }
+  }
+
+  .appointment-form__form-submit {
+    width: 100%;
+    margin-bottom: 17px;
+  }
+}
+
+@include breakpoint-down (375px) {
+  .appointment-form {
+    max-width: 375px;
     padding: {
       top: 25px;
       right: 23px;
