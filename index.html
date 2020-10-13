@@ -40,7 +40,7 @@
           </span>
         </p>
       </section>
-      <nav id="siteNav" class="site-header__site-nav site-nav">
+      <nav class="site-header__site-nav site-nav">
 
         <h2 class="visually-hidden">a menu that leads to sections of the dental practice website</h2>
 
@@ -103,13 +103,22 @@
       <div class="container container--small intro-section__container"
        aria-describedby="we will skip you through this section as this section has graphical information and a slider that is inconvenient for you"
        >
+        <div class="intro-section__slider-controlers-wrapper">
+          <span class="intro-section__slider-pre" role="button" aria-label="previous slide"></span>
+          <span class="intro-section__slider-next" role="button" aria-label="next slide"></span>
+        </div>
         <ul class="intro-section__brief-info-list" aria-hidden="true">
           <li class="intro-section__brief-info-item" aria-hidden="true">
+            <picture>
+              <source type="image/webp" srcset="./img/intro.webp 1x, ./img/intro@2x.webp 2x">
+
+              <img class="intro-section__brief-info-img" src="./img/intro.png" alt="hero image" width="878" height="900" srcset="./img/intro.png 1x, ./img/intro@2x.png 2x">
+            </picture>
             <div class="intro-section__brief-info-text-wrapper" aria-hidden="true">
               <p class="intro-section__brief-info-description">Modern technology and expert-class dentists</p>
               <h3 class="intro-section__brief-info-title">get a brilliant smile
                 for every day</h3>
-              <a class="intro-section__brief-info-link" href="#">GET</a>
+              <a class="button intro-section__brief-info-link" href="#">GET</a>
             </div>
           </li>
         </ul>
