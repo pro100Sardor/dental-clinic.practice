@@ -105,16 +105,16 @@
   }
 }
 
-.site-nav__social-networks-link {
+.site-nav__networs-img {
   transition: opacity 0.2s ease;
+}
 
-  &:hover {
-    opacity: 0.8;
-  }
+.site-nav__social-networks-link:hover .site-nav__networs-img {
+  opacity: 0.8;
+}
 
-  &:active {
-    opacity: 0.6;
-  }
+.site-nav__social-networks-link:active .site-nav__networs-img {
+  opacity: 0.6;
 }
 
 .site-nav__vk-img {
