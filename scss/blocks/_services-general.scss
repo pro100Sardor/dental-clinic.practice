@@ -1,17 +1,21 @@
 .services-general__container {
   display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .services-general__service-info-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   max-width: 300px;
   border-radius: 5px;
   background-color: #FFD600;
   padding: {
     top: 39px;
-    bottom: 56px;
+    bottom: 31px;
     left: 36px;
     right: 37px;
   }
@@ -33,8 +37,13 @@
   }
 }
 
+.services-general__service-info-wrapper--first {
+  padding-bottom: 56px;
+}
+
 .services-general__service-info-wrapper--second {
   background-color: #FFE040;
+  order: -1;
 
   &::before {
     background-image: url("../img/prosthetics.png");
@@ -64,4 +73,10 @@
   line-height: 25px;
   color: #272727;
   @include p-m-control;
+}
+
+.services-general__appointment-form {
+  order: -2;
+  transform: translateY(-78px);
+  z-index: 1;
 }

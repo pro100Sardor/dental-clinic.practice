@@ -1,0 +1,116 @@
+.appointment-form {
+  max-width: 540px;
+  min-width: 540px;
+  border-radius: 5px;
+  background-color: #0055B8;
+  padding: {
+    left: 33px;
+    right: 34px;
+    top: 25px;
+    bottom: 18px;
+  }
+  color: #fff;
+}
+
+.appointment-form__title {
+  @include h-m-control (0, 29px);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.appointment-form__user-field {
+  display: block;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color:#0055B8;
+  color: #fff;
+  padding: {
+    top: 21px;
+    bottom: 20px;
+    left: 14px;
+    right: 14px;
+  }
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 3px 1px #fff;
+  }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.appointment-form__user-agreement-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.appointment-form__user-agreement-text {
+  width: 256px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  margin-right: 30px;
+}
+
+.appointment-form__user-agreement-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.appointment-form__user-agreement-appearance {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 26px 19px;
+}
+
+.appointment-form__user-agreement:checked + .appointment-form__user-agreement-appearance {
+  background-image: url("../img/check.svg");
+}
+
+.appointment-form__form-submit {
+  background-color: #FFD600;
+  width: 230px;
+  height: 55px;
+  border: none;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #272727;
+  margin-bottom: 22px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 3px 1px #fff;
+  }
+}
