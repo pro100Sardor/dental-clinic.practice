@@ -1,0 +1,67 @@
+.services-general__container {
+  display: flex;
+}
+
+.services-general__service-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  border-radius: 5px;
+  background-color: #FFD600;
+  padding: {
+    top: 39px;
+    bottom: 56px;
+    left: 36px;
+    right: 37px;
+  }
+
+  &::before {
+    content: "";
+    width: 87px;
+    height: 86px;
+    background-image: url("../img/treatment.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-bottom: 19px;
+    mix-blend-mode: multiply;
+
+    @include bg-retina {
+      background-image: url("../img/treatment@2x.png");
+    }
+  }
+}
+
+.services-general__service-info-wrapper--second {
+  background-color: #FFE040;
+
+  &::before {
+    background-image: url("../img/prosthetics.png");
+
+    @include bg-retina {
+      background-image: url("../img/prosthetics@2x.png");
+    }
+  }
+}
+
+.services-general__service-name {
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #272727;
+  @include h-m-control (0, 4px);
+  text-align: center;
+}
+
+.services-general__service-description {
+  width: 100%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #272727;
+  @include p-m-control;
+}
